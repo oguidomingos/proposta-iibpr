@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal-primary: #0D9488;
+  --color-teal-light: #14B8A6;
+  --color-teal-dark: #0F766E;
+  --color-gold: #D4A853;
+  --color-gold-light: #E5B563;
+  --color-gold-dark: #B8923F;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #cbd5e1;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow-teal {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(13, 148, 136, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(13, 148, 136, 0.6);
+  }
+}
+
+@keyframes pulse-glow-gold {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(212, 168, 83, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(212, 168, 83, 0.4);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.glow-btn-teal {
+  animation: pulse-glow-teal 2s ease-in-out infinite;
+}
+
+.glow-btn-gold {
+  animation: pulse-glow-gold 2s ease-in-out infinite;
+}
+
+.gradient-mesh-1 {
+  background: radial-gradient(ellipse at 20% 50%, rgba(13, 148, 136, 0.15) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 20%, rgba(212, 168, 83, 0.1) 0%, transparent 40%),
+              radial-gradient(ellipse at 50% 80%, rgba(13, 148, 136, 0.08) 0%, transparent 45%);
+}
+
+.gradient-mesh-2 {
+  background: radial-gradient(ellipse at 70% 30%, rgba(212, 168, 83, 0.12) 0%, transparent 50%),
+              radial-gradient(ellipse at 20% 70%, rgba(13, 148, 136, 0.1) 0%, transparent 45%);
+}
