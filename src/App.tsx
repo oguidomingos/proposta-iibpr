@@ -452,9 +452,8 @@ function ResearchNavigator() {
             <span className="block text-[#38a89d] text-2xl sm:text-3xl mt-1">Assistente de Pesquisa com IA</span>
           </h2>
           <p className="text-[#a0aec0] text-lg leading-relaxed">
-            Primeiro assistente de pesquisa acadêmica com IA focado em{' '}
-            <strong className="text-white">Psicomotricidade</strong>, 100% em Português.
-            Desenvolvido exclusivamente para o ecossistema IIBPR.
+            Primeiro assistente de <strong className="text-white">pesquisa acadêmica com IA</strong> 100% em Português.
+            Começa pela Psicomotricidade — o nicho do IIBPR — e expande para toda a pesquisa acadêmica brasileira.
           </p>
         </div>
 
@@ -512,7 +511,7 @@ function Mercado() {
   ]
 
   const diferenciais = [
-    'Único nicho de Psicomotricidade no Brasil',
+    'Primeiro foco em Psicomotricidade — nicho sem concorrência no Brasil',
     'Português nativo — não é tradução',
     '8 APIs acadêmicas integradas (mais que a maioria)',
     'GenUI chat com interface generativa',
@@ -534,7 +533,7 @@ function Mercado() {
             Mercado Validado e Crescente
           </h2>
           <p className="text-[#4a5568] text-lg leading-relaxed">
-            Concorrentes globais cobram entre $6 e $20/mês. Nenhum foca em Psicomotricidade.
+            Concorrentes globais cobram entre $6 e $20/mês. Nenhum fala Português nativo nem serve o mercado acadêmico brasileiro.
           </p>
         </div>
 
@@ -804,10 +803,14 @@ function Proposta() {
               <p className="text-[#4a5568] text-sm mb-6">Parceria de longo prazo com participação nos resultados</p>
 
               <div className="bg-[#faf7f2] rounded-2xl p-6 mb-6">
-                <h4 className="font-bold text-[#1a2744] mb-4 text-sm uppercase tracking-wide">Investimento Fabiane</h4>
+                <h4 className="font-bold text-[#1a2744] mb-4 text-sm uppercase tracking-wide">Investimento Total</h4>
                 <div className="flex items-center gap-3 mb-2">
-                  <span className="text-3xl font-bold text-[#1a2744]" style={{ fontFamily: "'Playfair Display', serif" }}>R$ 1.000</span>
-                  <span className="text-[#4a5568] text-sm">entrada</span>
+                  <span className="text-3xl font-bold text-[#1a2744]" style={{ fontFamily: "'Playfair Display', serif" }}>R$ 3.000</span>
+                  <span className="text-[#4a5568] text-sm">site profissional</span>
+                </div>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-lg font-semibold text-[#2d7d78]">+ R$ 1.000</span>
+                  <span className="text-[#4a5568] text-sm">aporte Fabiane (entrada)</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-lg font-semibold text-[#2d7d78]">+ R$ 120/mês</span>
@@ -828,11 +831,12 @@ function Proposta() {
 
               <ul className="space-y-2 mb-8">
                 {[
-                  'Site profissional completo',
+                  'Site profissional R$ 3.000 (incluso)',
                   'Research Navigator funcionando',
                   'Exclusividade de 12 meses',
                   'Suporte contínuo incluso',
-                  'Participação nos lucros futuros',
+                  'Fabiane faz frente comercial no meio acadêmico',
+                  'Participação nos lucros: 30% Fabiane / 70% Guilherme',
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-2 text-sm text-[#4a5568]">
                     <svg className="w-4 h-4 text-[#2d7d78] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
